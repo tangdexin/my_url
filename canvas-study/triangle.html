@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>绘制三角形</title>
+</head>
+<body>
+<canvas id="myCanvas" style="border: 1px solid;" width="200" height="200"></canvas>
+<script>
+var c = document.getElementById('myCanvas');
+var context = c.getContext('2d');
+context.fillStyle = 'red';
+context.beginPath();
+context.moveTo(25,25);
+context.lineTo(150,25);
+context.lineTo(25,150);
+context.lineTo(25,25);
+//context.closePath();
+context.stroke();
+//context.fill();
+</script>
+</body>
+</html>

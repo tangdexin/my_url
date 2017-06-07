@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>多个弧线</title>
+</head>
+<body>
+<canvas id="myCanvas" style="border:1px solid;" width="300" height="150">不支持就说</canvas>
+
+<script>
+var c = document.getElementById('myCanvas');
+var context = c.getContext('2d');
+for (var i = 0; i < 15; i++) {
+	context.strokeStyle = '#f0f';
+	context.beginPath();
+	context.arc(0,150,i*10,0,Math.PI*3/2,true);
+	//context.closePath()用于将图形闭合；如果不加的话，就没有封闭的直线，只有弧线
+	//context.closePath();
+	context.stroke();
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>绘制图形</title>
+</head>
+<body>
+<canvas id="myCanvas" style="border:1px solid;" width="500" height="200">不支持就说</canvas>
+
+<script>
+var c = document.getElementById('myCanvas');
+var context = c.getContext('2d');
+context.fillStyle = '#FFOOFF';
+context.beginPath();
+context.arc(0,200,50,0,Math.PI*2,true);
+context.closePath();
+context.fill();
+</script>
+</body>
+</html>
