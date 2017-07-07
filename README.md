@@ -1,6 +1,1 @@
-<html>
-  <body>
-  <h1>这是个说明</h1>
-  </body>
-</html>
-练习使用
+国外的webpack的教程https://blog.madewithlove.be/post/webpack-your-bags/
